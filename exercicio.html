@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <script>
+        /*
+        Faça um programa em Javascript, solicite ao usuário a altura e o peso de uma pessoa. Posteriormente deve ser calculado o IMC desta pessoa. Por fim o resultado deve ser informado, de acordo com a tabela IMC.*/
+   
+         let altura=prompt("Informe sua altura:", "");
+         let peso=prompt("Informe seu peso:", "");
+
+         //conversão para número real
+         altura=parseFloat(altura);
+         peso=parseFloat(peso);
+
+         altura=parseInt(altura);
+         peso=parseInt(peso);
+
+         calculo= peso/altura;
+
+         //resultado informado através do IMC
+
+         let resultado="calculo";
+           if(resultado<18.5){
+               console.log("Classifica-se em magreza")
+           }else if("resultado"<24.9){
+               console.log("Classifica-se em peso normal")
+           }else if(resultado<29.9){
+               console.log("Classifica-se em sobrepeso")
+           }else if(resultado<39.9){
+               console.log("Classifica-se em obesidade")
+           }else if(resultado>40){
+               console.log("Classifica-se em obesidade grave")
+           }
+   
+    </script>
+</body>
+</html>
